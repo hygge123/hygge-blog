@@ -1,0 +1,112 @@
+mysql 数据库的建立与连接
+vuex   mutations 。。map
+
+ajax
+
+单文件的总结
+
+1.data 和钩子函数 mounted 都是是函数
+  且 data 里面构造为 return{}
+   data（）{
+   
+	return{
+			
+		}
+		
+	}
+
+
+2.其他的差不多均为对象形式，即对象名 : {  }
+
+3. 他们的名字    方法  组件 均为复数  methods components
+    注意这里需要和 axios  区分开 里面的method  请求方法是单数
+4.  computed   计算属性
+
+ export default {
+        name: "单文件组合",
+        data(){
+            return{
+
+            }
+        },//data是一个函数  里面的数据都是return出来的
+        methods:{
+                // 方法是复数形式  在axios中的方法是method方法
+        },
+        components:{
+               // components  也是一个对象
+        },
+        computed:{
+             //computed 也是一个对象
+        },
+        mounted(){
+              //钩子函数
+        }
+
+    }
+
+
+
+
+
+
+
+5.这里 v-for 循环
+ <tr v-for="{name,author,score},index in readLists" class="item">
+               <td>{{name}}</td>
+               <td>{{author}}</td>
+               <td>{{score}}</td>
+               <td>
+                 <button @click="editorRead(index)">编辑</button>
+                 <button>删除</button>
+               </td>
+             </tr>
+按数组进行 渲染
+
+
+
+Vue 包含一组观察数组的变异方法，所以它们也将会触发视图更新。这些方法如下：
+
+push()
+pop()
+shift()
+unshift()
+splice()
+sort()
+reverse()
+你打开控制台，然后用前面例子的 items 数组调用变异方法：example1.items.push({ message: 'Baz' }) 。
+用webpack打包一个项目
+vue init webpack + 项目名
+如何安装vue-cli
+
+../表示上级目录  
+./ 表示当前目录
+
+
+改变框架里面的样式
+用到
+ npm install sass-loader -D
+
+  npm install node-sass -D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
